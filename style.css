@@ -1,16 +1,16 @@
 .page {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 0;
+    border: 0px;
     padding: 0px;
+    justify-content: space-between;
 }
 
 a {
     text-decoration: none;
 }
 
-ul {
+ul, li {
     list-style-type: none;
     display: flex;
     gap: 8px;
@@ -21,7 +21,9 @@ ul {
 h1 {
     font-size: 48px;
     font-weight: extra-bold;
-    color: #F9FAF8
+    color: #F9FAF8;
+    padding: 0px;
+    margin: 0px;
 }
 
 button {
@@ -31,40 +33,55 @@ button {
     color: #F9FAF8;
     border: 0px;
     padding: 2px 16px;
+    margin-top: 8px;
 }
 
-
-.top-content {
-    background-color: #1F2937;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 24px;
-    border: 0;
-    height: 500px;
-}
-
-
-.top-right, .top-left {
-    padding: 16px;
+.top, .mid-content, .quote-container, .bottom-content, .footer {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
-    width: 500px;
+    padding: 16px 200px 100px;
+}
+
+.top {
+    background-color: #1F2937;
+    border: 0px;
+    gap: 36px;
+}
+
+.top-content, .header {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    gap: 24px;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
+.top-content {
+    height: 200px;
+}
 
+.placeholder, .top-left { 
+    flex: 1;
+    align-self: flex-start;
+    padding: 0px;
+    margin: 0px;
+    max-width: 400px;
+    height: 230px;
+}
 
-.right-links, .placeholder {
-    align-self: flex-end;
+.top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 .subtext, a {
@@ -73,10 +90,14 @@ button {
 }
 
 .placeholder {
-    height: 200px;
-    width: 400px;
     display: flex;
     background-color: lightgrey;
     padding: 0px;
     margin: 0px;
+    justify-content: center;
+    align-items: center;
 }   
+
+.cards {
+    display: flex;
+}
