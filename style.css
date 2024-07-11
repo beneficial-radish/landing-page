@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header, .top-content {
+    background-color: #1F2937;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
