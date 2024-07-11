@@ -1,0 +1,1 @@
+This repo contains my landing page project with TOP whereby I must exhibit my current HTML/CSS skills by creating a landing page to the near specifications of a provided template, using the same layout, fonts, and colors. # landing-page
